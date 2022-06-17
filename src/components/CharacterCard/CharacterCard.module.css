@@ -1,0 +1,28 @@
+.characterCard {
+    @apply
+    relative
+    cursor-pointer
+    w-full
+    
+    /* tablet */
+    md:w-1/4
+
+    /* desktop */
+    lg:w-1/6
+}
+
+.avatar { 
+    @apply
+    w-full
+}
+
+.characterName {
+    @apply 
+    absolute
+    w-full
+    bottom-0 
+    text-center font-bold text-lg
+    bg-slate-500/50
+    py-2
+    
+}

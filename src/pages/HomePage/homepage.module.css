@@ -1,0 +1,16 @@
+.page {
+    @apply
+    w-5/6 
+    mx-auto 
+}
+
+.title {
+    @apply
+    font-bold text-7xl text-center
+    py-5
+}
+
+.cardWrapper {
+    @apply
+    flex gap-5 flex-wrap justify-center
+}
