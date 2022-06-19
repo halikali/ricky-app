@@ -1,0 +1,103 @@
+.main {
+    @apply
+    w-full min-h-screen 
+    flex justify-center items-center
+}
+
+.card {
+    @apply
+    relative
+    bg-slate-500
+    w-96
+    flex flex-col items-center 
+
+    /* responsive small devices */
+    sm:w-[600px]
+
+    /* responsive tablet devices */
+    md:w-[700px]
+
+    /* responsive desktop devices */
+    lg:w-[992px]
+}
+
+.cardBody {
+    @apply
+    py-5 
+    w-5/6
+
+    /* responsive small devices */
+    sm:w-full
+    sm:flex sm:gap-5 
+    sm:px-5
+
+    /* responsive tablet devices */
+    md:justify-between md:w-5/6
+
+    /* responsive desktop devices */
+    lg:w-[75%]
+}
+
+.backButton {
+    @apply
+    w-full text-left
+    flex justify-start items-center
+
+    pl-7
+    /* responsive small devices*/
+    sm:pl-4 sm:pt-2
+
+    /* responsive tablet devices */
+    md:pl-20
+
+    /* responsive desktop devices */
+    lg:pl-36
+}
+
+.title {
+    @apply
+    text-2xl text-white font-bold
+}
+
+.characterInfo {
+    @apply
+    text-white text-left first-letter:uppercase
+    border-b border-gray-300
+    py-2
+
+    /* responsive small devices */
+    sm:px-5
+}
+
+.label {
+    @apply
+    inline-block
+    text-fuchsia-500 w-16
+    font-normal
+}
+
+.avatar {
+    @apply
+    w-full
+
+    /* responsive small devices */
+    sm:rounded-lg sm:mb-3
+}
+
+.episodesList {
+    @apply
+    h-[400px] 
+    overflow-scroll overflow-x-hidden
+    pr-3
+    child:py-1 child:cursor-pointer child:mb-1
+
+    /* responsive tablet devices */
+    md:mt-3
+    md:h-[455px]
+
+    /* responsive desktop devices */
+    lg:h-[492px]
+    
+    /* custom scrollbar */
+    scrollbar scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300  hover:scrollbar-thumb-fuchsia-500
+}
