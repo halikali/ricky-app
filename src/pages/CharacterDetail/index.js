@@ -11,7 +11,6 @@ const CharacterDetailPage = () => {
     params.id.split("-")[1]
   );
 
-  console.log("data => ", data && data);
   return (
     <div className={style.main}>
       <div className={style.card}>
